@@ -1,6 +1,14 @@
 (function($) {
 
 	"use strict";
+
+  $('a.footer-top').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
 	
 
   /* Plugin para efeito de navegação do menu */
@@ -40,6 +48,29 @@
 
     $("#responsive-menu a").click(function(){
       $("#responsive-menu").hide();
+    }); 
+
+    // Envio de contato
+    $('#Enviar').click(function(event) {
+          var dados = $('#form-contato').serialize();
+
+          $.ajax({
+            url: 'envia_email.php',
+            type: 'POST',
+            data: dados,
+            dataType: "json",
+            success: function(data) {
+              if(data.erro == "0"){
+              $('.msg').html(data.mensagem).removeClass('erro').removeClass('alerta').addClass('sucesso');
+            }else{
+                            if(data.erro == "1"){
+                                $('.msg').html(data.mensagem).removeClass('sucesso').removeClass('alerta').addClass('erro');
+                            }else{
+                  $('.msg').html(data.mensagem).removeClass('sucesso').removeClass('erro').addClass('alerta');
+                            }
+            }
+            }
+          });
     });  
 
 })(jQuery);
