@@ -129,9 +129,9 @@ $dados = $controller->getDados($sql, null, TRUE);
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center section-header">
-                    <h2 class="section-title"><i class="fa fa-cogs"></i> Serviços</h2>
+                    <h1 class="section-title"><i class="fa fa-cogs"></i> Nossos Serviços</h1>
                 </div>
-            </div>
+            </div><br><br><br>
             <div class="row">
                 <div class="col-md-3 col-xs-6 text-center">
                     <div class="service-item">
@@ -175,7 +175,7 @@ $dados = $controller->getDados($sql, null, TRUE);
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center section-header">
-                    <h2 class="section-title">Sobre Nossa Empresa</h2>
+                    <h1 class="section-title">Sobre Nossa Empresa</h1>
                 </div>
             </div>
             <div class="row">
@@ -210,7 +210,7 @@ $dados = $controller->getDados($sql, null, TRUE);
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center section-header">
-                    <h2 class="section-title"><i class='fa fa-rss'></i> Notícias sobre Tecnologia</h2>
+                    <h1 class="section-title"><i class='fa fa-rss'></i> Notícias sobre Tecnologia</h1>
                 </div>
             </div>
             <div class="row">
@@ -250,7 +250,7 @@ $dados = $controller->getDados($sql, null, TRUE);
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center section-header">
-                    <h2 class="section-title"><i class='fa fa-question-circle'></i> FAQ - Perguntas e Respostas</h2>
+                    <h1 class="section-title"><i class='fa fa-question-circle'></i> FAQ - Perguntas e Respostas</h1>
                 </div>
             </div>
             <div class="row">
@@ -294,7 +294,7 @@ $dados = $controller->getDados($sql, null, TRUE);
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center section-header">
-                    <h2 class="section-title fa fa-envelope"> Entre em contato conosco</h2>
+                    <h1 class="section-title fa fa-envelope"> Entre em contato conosco</h1>
                 </div>
             </div>
             <div class="row">
