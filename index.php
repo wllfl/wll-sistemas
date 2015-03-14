@@ -215,7 +215,7 @@ $dados = $controller->getDados($sql, null, TRUE);
             </div>
             <div class="row">
                 <div class="col-md-6">                   
-                        <h3 class='blogger'>ÚLTIMOS POSTS</h3>
+                        <h3 class='blogger'>Últimos Posts do blog <a target="blank" href="http://devwilliam.blogspot.com.br/">devwilliam.blogspot</a></h3>
                         <ul>
                             <li class='item-lista'><a target="blank" href="http://devwilliam.blogspot.com.br/2015/03/fim-do-suporte-engine-bde-no-delphi-x7.html">
                                 <i class="fa fa-check"></i> Fim do suporte a Engine BDE no Delphi XE7 preocupa!</a>
@@ -232,7 +232,7 @@ $dados = $controller->getDados($sql, null, TRUE);
                         </ul>
                 </div> <!-- .col-md-6 -->
                 <div class="col-md-6">
-                        <h3 class='news'>NEWS TECNOLOGIA</h3>
+                        <h3 class='news'>NEWS Tecnologia</h3>
                          <ul>
                             <?php foreach($dados as $noticia):?>
                                 <li class='item-lista'><a target="blank" href="<?=$noticia->url?>">
