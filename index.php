@@ -45,7 +45,7 @@ $dados = $controller->getDados($sql, null, TRUE);
                 <div class="menu-holder">
                     <div class="col-md-3 col-sm-2 logo">
                         <a href="#" title="WLL - Sistemas" class='logo'>
-                            <img src="images/wll-sistemas.png" height="56" width="251" alt=""><br> Sistemas
+                            <img src="images/wll-sistemas.png" title="WLL-Sistemas" alt="WLL-Sistemas" height="56" width="251" alt=""><br> Sistemas
                         </a>
                     </div>
                     <div class="col-md-7 col-sm-8">
@@ -83,7 +83,7 @@ $dados = $controller->getDados($sql, null, TRUE);
             <div class="row">
                 <div class="col-md-offset-1 col-lg-5 col-md-5 col-xs-offset-1 col-sm-5 col-xs-8 col-xs-offset-2">
                     <div class="topc-img">
-                        <img src="images/notebook.png" width="" height="" alt="">
+                        <img src="images/linguagens-programacao.png" width="" height="" alt="Desenvolvimento em PHP, Java, C#, SQL" title="Desenvolvimento em PHP, Java, C#, SQL">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -181,7 +181,7 @@ $dados = $controller->getDados($sql, null, TRUE);
             <div class="row">
                 <div class="col-md-6">
                     <div class="col-md-5 col-xs-12 text-center">
-                        <img src="images/product-1.png" alt="">
+                        <img src="images/nossa-empresa.png" alt="Nossa Empresa" title="Nossa Empresa">
                     </div>                    
                     <div class="product-content col-md-7 col-xs-12">
                         <h3>Empresa</h3>
@@ -197,7 +197,7 @@ $dados = $controller->getDados($sql, null, TRUE);
                         <p>Nosso objetivo é trabalhar em conjunto com nossos clientes, não apenas fornecendo soluções na área de tecnologia da informação, mas colaborando para o seu crescimento.</p>                 
                     </div>
                     <div class="col-md-5 col-xs-12 text-center">
-                        <img src="images/product-2.png" alt="">
+                        <img src="images/missao-empresa.png" alt="Missão da Empresa" title="Missão da Empresa">
                     </div>
                 </div> <!-- .col-md-6 -->
             </div>
@@ -345,7 +345,7 @@ $dados = $controller->getDados($sql, null, TRUE);
                         <li><a target='_blank' href="https://www.facebook.com/pages/WLL-Sistemas-Solu%C3%A7%C3%B5es-em-Tecnologia-da-Informa%C3%A7%C3%A3o/327263654076457?ref=bookmarks"><i class="fa fa-facebook-square fa-3x"></i></a></li>
                     </ul>
                     <b class="blue"> </b><br>
-                    <a href="#principal" class="scroll footer-top"><img src="images/wll-sistemas.png" height="46" width="210" alt=""/></a>
+                    <a href="#principal" class="scroll footer-top"><img src="images/wll-sistemas.png" alt="WLL-Sistemas" title="WLL-Sistemas" height="46" width="210" alt=""/></a>
                     <br><br>
                     <span class='texto-footer'>Copyright &copy; 2015</span>
                     <span class='texto-footer'>Desenvolvido por: <a href="http://wllsistemas.com.br" target="_blank">WLL-Sistemas</a></span>
