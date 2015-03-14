@@ -1,3 +1,11 @@
+<?php
+require_once "admin/classes/conexao.class.php";
+require_once "admin/classes/controller.class.php";
+
+$controller = new controller('tab_noticias');
+$sql = "SELECT titulo, url FROM tab_noticias WHERE status = 'Ativo' ORDER BY id DESC LIMIT 4";
+$dados = $controller->getDados($sql, null, TRUE);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -209,6 +217,9 @@
                 <div class="col-md-6">                   
                         <h3 class='blogger'>ÚLTIMOS POSTS</h3>
                         <ul>
+                            <li class='item-lista'><a target="blank" href="http://devwilliam.blogspot.com.br/2015/03/fim-do-suporte-engine-bde-no-delphi-x7.html">
+                                <i class="fa fa-check"></i> Fim do suporte a Engine BDE no Delphi XE7 preocupa!</a>
+                            </li>
                             <li class='item-lista'><a target="blank" href="http://devwilliam.blogspot.com.br/2015/01/10-pegadinhas-da-linguagem-php.html">
                             	<i class="fa fa-check"></i> 10 pegadinhas da linguagem PHP.</a>
                             </li>
@@ -223,15 +234,11 @@
                 <div class="col-md-6">
                         <h3 class='news'>NEWS TECNOLOGIA</h3>
                          <ul>
-                            <li class='item-lista'><a target="blank" href="http://labslinux.blogspot.com.br/2015/01/segundo-alpha-do-ubuntu-1504-ja-esta.html">
-                            	<i class="fa fa-check"></i> Segundo Alpha do Ubuntu 15.04 já está disponível.</a>
-                            </li>
-                            <li class='item-lista'><a target="blank" href="http://mathiasbrem.com.br/atualizacao-critica-de-seguranca-mysql/">
-                            	<i class="fa fa-check"></i> Liberado release para correções de segurança no MySQL 5.5 e 5.6.</a>
-                            </li>
-                            <li class='item-lista'><a target="blank" href="http://info.abril.com.br/noticias/internet/2015/01/youtube-deixa-o-flash-e-adota-html5-como-padrao-na-reproducao-de-videos.shtml">
-                            	<i class="fa fa-check"></i> YouTube deixa o Flash e adota HTML5 como padrão na reprodução de vídeos.</a>
-                            </li>
+                            <?php foreach($dados as $noticia):?>
+                                <li class='item-lista'><a target="blank" href="<?=$noticia->url?>">
+                                    <i class="fa fa-check"></i> <?=$noticia->titulo?></a>
+                                </li>
+                            <?php endforeach;?>
                         </ul>
                 </div> 
             </div> <!-- .row -->
